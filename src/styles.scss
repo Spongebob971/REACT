@@ -1,0 +1,54 @@
+$calulator-padding: 4rem;
+
+.calculator {
+  &-wrapper {
+    display: block;
+    box-sizing: border-box;
+    background-color: rgb(214, 228, 17);
+    width: 40%;
+    margin: auto;
+    height: 40rem;
+    padding-left: $calulator-padding;
+    padding-right: $calulator-padding;
+  }
+
+  &-display {
+    background-color: darkblue;
+    color: white;
+    height: 4rem;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 40px;
+    padding-right: 1rem;
+  }
+
+  &-controls {
+    margin-top: 1rem;
+    height: 30rem;
+    background-color: rgb(57, 185, 100);
+  }
+
+  &-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 40px;
+    width: 30%;
+    background-color: red;
+    margin: 0.5rem;
+    box-shadow: 2px 2px 4px 0px rgba(0, 0, 0, 0.75);
+    height: 4.9rem;
+    transition: all 0.1s ease-out;
+
+    &:hover {
+      background-color: darkred;
+      cursor: pointer;
+    }
+
+    &:active {
+      box-shadow: none;
+      background-color: salmon;
+    }
+  }
+}
